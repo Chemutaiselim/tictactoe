@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
         //announcing the winner
         if (winner==-1){
             if (winner==1) {
-                Toast.makeText(this, "player 1 won the game", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "plaer 1 won the game", Toast.LENGTH_LONG).show()
             }
             else{
                 Toast.makeText(this, "player 2 won the game", Toast.LENGTH_LONG).show()

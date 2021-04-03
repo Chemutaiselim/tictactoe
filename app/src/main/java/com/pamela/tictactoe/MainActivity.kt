@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             R.id.bt8 -> cellID = 8
             R.id.bt9 -> cellID = 9
         }
-        Toast.makeText(this, "cell id" + cellID, Toast.LENGTH_LONG).show()
+
         playGame(cellID, buSelected)
     }
 
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             winner = 1
         }
         if (player2.contains(7) && player2.contains(8) && player2.contains(9)) {
-            winner = 1
+            winner = 2
         }
         //column
         if (player1.contains(1) && player1.contains(4) && player1.contains(7)) {
@@ -99,24 +99,36 @@ class MainActivity : AppCompatActivity() {
             winner = 1
         }
         if (player2.contains(3) && player2.contains(6) && player2.contains(9)) {
+            winner = 2
+        }
+        //diagonal
+        if (player1.contains(1) && player1.contains(5) && player1.contains(9)) {
             winner = 1
         }
+        if (player2.contains(1) && player2.contains(5) && player2.contains(9)) {
+            winner = 2
+        }
+        if (player1.contains(3) && player1.contains(5) && player1.contains(7)) {
+            winner = 1
+        }
+        if (player2.contains(3) && player2.contains(5) && player2.contains(7)) {
+            winner = 2
+        }
+
 
         //announcing the winner
-        if (winner==-1){
-            if (winner==1) {
-                Toast.makeText(this, "plaer 1 won the game", Toast.LENGTH_LONG).show()
-            }
-            else{
+        if (winner == -1) {
+            if (winner == 1) {
+                Toast.makeText(this, "player 1 won the game", Toast.LENGTH_LONG).show()
+            } else {
                 Toast.makeText(this, "player 2 won the game", Toast.LENGTH_LONG).show()
             }
         }
 
-
-
     }
+
     private fun autoPlay(){
-        var emptyCells=ArrayList<Int>()
+        val emptyCells=ArrayList<Int>()
         for (cellID in 1..9){
             if(!(player1.contains(cellID)||player2.contains(cellID))){
                 emptyCells.add(cellID)

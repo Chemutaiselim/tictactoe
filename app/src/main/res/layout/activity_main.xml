@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".MainActivity">
 
 
@@ -12,10 +11,9 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
         android:scaleType="center"
-        app:srcCompat="@drawable/tic" />
+        app:srcCompat="@drawable/tic"
+        android:contentDescription="@string/todo" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -34,7 +32,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt1"
@@ -43,7 +44,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt3"
@@ -52,7 +56,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -67,7 +74,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt6"
@@ -76,7 +86,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt5"
@@ -85,7 +98,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -100,7 +116,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt7"
@@ -109,7 +128,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/bt9"
@@ -118,7 +140,10 @@
                 android:layout_margin="5dp"
                 android:background="#FDFAF2EB"
                 android:onClick="buClick"
-                android:text="" />
+                android:textSize="18sp"
+                android:textColor="#FDFAF2EB"
+                android:text=""
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
     </TableLayout>

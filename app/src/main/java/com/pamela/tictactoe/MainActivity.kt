@@ -127,7 +127,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun autoPlay(){
+    private fun autoPlay(bt1: Button) {
         val emptyCells=ArrayList<Int>()
         for (cellID in 1..9){
             if(!(player1.contains(cellID)||player2.contains(cellID))){
